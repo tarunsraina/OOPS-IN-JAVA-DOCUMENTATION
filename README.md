@@ -433,17 +433,89 @@ To sum up:
 | *default* | *package level* |
 | *public*| *global level* |
 
+``` java
+package pack1;
+class A
+{
+	protected void m1()
+	{
+		System.out.println("Hello");
+	}
+}
+
+class B extends A
+{
+	public static void main(String args[])
+	{
+		A a=new A();
+		A.m1();
+		
+		B b=new B();
+		b.m1();
+		
+		A obj=new B();
+		obj.m1();
+	}
+}
+
+```
+
+
+Above example is valid,since both classes are in the same package,protected method can be called from anywhere within the same package.
 
 
 
+consider same example,but in diffrent packages:
+
+``` java
+
+package pac1;
+class A
+{
+	protected void m1()
+	{
+		System.out.println("Hello");
+	}
+}
+
+```
+
+``` java
+
+package pack2;
+import pack1.A;
+public class B extends A
+{
+	public static void main(String args[])
+	{
+		
+		A a=new A();
+		A.m1();     	// not valid because of parent reference
+		
+		B b=new B();
+		b.m1();   	 // valid
+		
+		
+		A obj=new B();
+		obj.m1();   	// not valid because of parent reference
+	}
+}
+
+```
+
+Remember:
+> parent reference cannot be used to access protected members
 
 
+#### summary of public,protected,default and private
 
-
-
-
-
-
+| ** visibility ** | ** public ** | **protected** | **default** | **private** |
+| --- | --- | --- | --- | --- |
+| within the same class | yes | yes | yes | yes |
+| from child class of same package | yes | yes | yes | no |
+| from non-child of same package | yes | yes | yes | no |
+| from child class of outside package | yes | yes[child ref only] | no | no |
+| from non-child class of outside package | yes | no | no | no |
 
 
 
