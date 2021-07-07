@@ -24,6 +24,10 @@ core concepts with examples along with common misconceptions,points to remember 
     
     
 - Member Modifiers
+  - public
+  - default
+  - private
+  - protected
 
 ## Java Source File Structure
 
@@ -403,6 +407,8 @@ public class B
 ```
 
 > Its a good programming practice to use private modifier to our variables.[highly recommended]
+
+
 > Recommended modifier for methods is public,since they serve functionality to other data memebers.
 
 To sum up:
