@@ -353,6 +353,8 @@ class MyClass
 ```
 ## member modifiers
 
+#### public
+
 If any data memeber is declared public,then the data memeber can be accessed from same package as well as diffrent package.[no restrictions]
 But make sure that the class in which the data memeber resides is public.
 
@@ -370,6 +372,35 @@ In the above case,even though ` m1() ` is public,the class is not public,so the 
 
 remember:
 > Default data memebers are not accessible outside the package.
+
+#### private
+
+If any methods,variables are declared private,then those will be accessible in same class only.They cant be accessed from outside the class.
+
+consider this example,
+
+``` java
+
+package pack1;
+class A
+{
+	private void m1()
+	{
+		System.out.println("Hello");
+	}
+}
+
+public class B
+{
+	public static void main(String args[])
+	{
+		A a=new A();
+		a.m1();   //since m1 is declared private in class A,it cant be called from other class.
+	}
+}
+
+
+```
 
 
 |  **Modifiers**  | **Access level** |
@@ -411,7 +442,7 @@ gmail:tarunsraina483@gmail.com
 
 [How to use mark down language](https://www.youtube.com/watch?v=eJojC3lSkwg)
 
-[OOPS in java(11 hour course)](https://www.youtube.com/watch?v=5NQjLBuNL0I&t=15s)
+[OOPS in java](https://www.youtube.com/watch?v=5NQjLBuNL0I&t=15s)
 
 
 #### If you find any errors please report the same,Thank you.
