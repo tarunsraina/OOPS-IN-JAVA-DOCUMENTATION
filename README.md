@@ -53,7 +53,7 @@ For example,if we want to use Scanner class which is already defined,we tell the
 Without import statements,if we want to use any classes/methods of another class,then fully qualified names can be used.
 
 Example:  ` java.util.Scanner sc=new Scanner(); ` is valid without any import statements.
-But fully qualified names increase code redundancy and decrease readability,beacuse every time use Scanner class,you should use the
+But fully qualified names increase code redundancy and decrease readability,beacuse every time you use Scanner class,you should use the
 above the syntax,so this is not recommended.
 
 Types of import:
