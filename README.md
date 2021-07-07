@@ -411,6 +411,17 @@ public class B
 
 > Recommended modifier for methods is public,since they serve functionality to other data memebers.
 
+
+
+#### protected
+
+If variables or methods are declared as protected,then
+
+
+case 1:Within the current package,you can access those variable or methods[no restrictions]
+
+case 2:From outside the package,they can be accessed from chid classes only.
+
 To sum up:
 
 
