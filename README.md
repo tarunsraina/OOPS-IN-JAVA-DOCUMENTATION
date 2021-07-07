@@ -6,7 +6,6 @@
 - OOPS in java is kinda huge topic,so i thought documenting would help in future for quick revision.I've tried to highlight
 core concepts with examples along with common misconceptions,points to remember and good programming practices.
 
-- Documentation is a good soft skill to have,so why not start with this?
 
 ## contents
 - Java Source File Structure.
