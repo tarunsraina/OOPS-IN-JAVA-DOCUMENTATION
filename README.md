@@ -402,6 +402,8 @@ public class B
 
 ```
 
+> Its a good programming practice to use private modifier to our variables.
+
 To sum up:
 
 
