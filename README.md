@@ -402,7 +402,8 @@ public class B
 
 ```
 
-> Its a good programming practice to use private modifier to our variables.
+> Its a good programming practice to use private modifier to our variables.[highly recommended]
+> Recommended modifier for methods is public,since they serve functionality to other data memebers.
 
 To sum up:
 
