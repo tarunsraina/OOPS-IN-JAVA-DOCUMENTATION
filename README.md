@@ -509,13 +509,19 @@ Remember:
 
 #### summary of public,protected,default and private
 
-| ** visibility ** | ** public ** | **protected** | **default** | **private** |
+| **visibility** | **public** | **protected** | **default** | **private** |
 | --- | --- | --- | --- | --- |
 | within the same class | yes | yes | yes | yes |
 | from child class of same package | yes | yes | yes | no |
 | from non-child of same package | yes | yes | yes | no |
-| from child class of outside package | yes | yes[child ref only] | no | no |
+| from child class of outside package | yes | yes[child reference only] | no | no |
 | from non-child class of outside package | yes | no | no | no |
+
+
+Restrictions high to low:
+> private>default>protected>public
+
+
 
 
 
