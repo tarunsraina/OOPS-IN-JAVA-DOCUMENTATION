@@ -402,6 +402,8 @@ public class B
 
 ```
 
+To sum up:
+
 
 |  **Modifiers**  | **Access level** |
 | --- | --- |
