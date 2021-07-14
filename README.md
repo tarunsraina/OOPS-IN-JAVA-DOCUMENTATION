@@ -27,6 +27,20 @@ core concepts with examples along with common misconceptions,points to remember 
   - default
   - private
   - protected
+  
+  
+ - Interface
+ 
+ 
+ - Data hiding
+ 
+ 
+ - abstraction
+ 
+ 
+ - Encapsulation
+ 
+ 
 
 ## Java Source File Structure
 
@@ -519,6 +533,159 @@ Remember:
 
 Restrictions high to low:
 > private>default>protected>public
+
+
+
+
+
+
+
+## Interface
+
+def 1:Interface is defined as any service requirement specification(SRS).
+def 2:Any contract between client and service provider is considered as interface.
+def 3:
+
+Consider this example,Lets say a particular company has three branches(head office,Branch A,Branch B)
+
+Head office wants to know the number of active customers in from their sub-branches
+
+case 1:If Interface is not used.
+
+If head office wants to call a method to know active customers,they first have to know which method gives them active customers.
+Lets say Branch A named its method as `getActiveCustomers()` and Branch B named its method as `getActCust()`.After knowing which 
+methods serve their functionality they will call those two methods and get total active customers.
+
+case 2:If interface is used.
+
+Both branch A and B must implement a interface of Head Office.If head office wants to call a method to know active customers,
+Since both the branches are implementing the interface,it must implement same methods.
+The head office need not to worry about what methods to call.They can use the same methods that they use,
+since both branches are implementing the interface provided by the head office.
+
+
+## Declaration and implementation of interface
+
+
+``` java
+
+ interface MyInterface
+{
+       public void getMyDetails();
+       public void updateMyDeatils();
+}
+//This is interface declaration,it has no implementation.The class has to provide implementation.
+
+//The implementing class should use the keyword `implements` to implement a interface.
+
+class serviceProvider implements MyInterface
+{
+        public void getMyDetails()  
+        {
+	//rule 1:must be declared public
+        }
+
+        public void updateMyDetails()
+        {
+	//rule 2:The implementing class must provide implementation for every methods of the interface
+	//If you fail to implement all methods of interface,just declare your class as abstract
+        }
+}
+
+```
+
+
+## Data hiding
+
+ we can implement data hiding by declaring variables as private.
+
+
+Example to illustrate data hiding :
+
+``` java
+
+class Account
+{
+        private double balance;
+         //Since this is private,it is automatically implementing data hiding.
+
+        // Now,to check balance,validation is required
+
+         public void getMybalnce
+         {
+	//validate user credentials
+
+	if(valid)
+	{
+		return balance;
+	}
+         }
+}
+
+```
+
+## abstraction
+
+Hiding internal implementation and highlight services provided.
+
+Example:You know how ATM card swipe can be used and services provided,but you dont the queries,servers it is using to validate you.
+Exposing these queries,servers,ip address is not recommended for security reasons.This is where abstraction must be used.
+
+Advantages:
+
+
+
+1.security
+
+
+2.Enhancement will be easy
+
+
+3.Maintainabilty
+
+
+4.Modularity
+
+
+
+
+## Encapsulation
+
+
+The process of grouping data members and corresponding methods into a single unit is called encapsulation.
+Every java class is an example for encapsulation.
+
+> Encapsulation=Data hiding + abstraction
+
+``` java
+
+class Account
+{
+     private double balance;
+
+     public void getBalance()
+     {
+	//validate the user
+                   return balance;	
+     }
+
+    public void setbalance(double balance)
+    {
+	//validation
+	//perform required operation
+    }
+}
+
+```
+
+
+
+
+
+
+
+
+
 
 
 
