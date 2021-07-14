@@ -2,12 +2,12 @@
 
 
 
-## why this documentation?
+## Why this documentation?
 - OOPS in java is kinda huge topic,so i thought documenting would help in future for quick revision.I've tried to highlight
 core concepts with examples along with common misconceptions,points to remember and good programming practices.
 
 
-## contents
+## Contents
 - Java Source File Structure.
 
 
@@ -368,7 +368,7 @@ class MyClass
      }
 }
 ```
-## member modifiers
+## Member modifiers
 
 #### public
 
@@ -624,7 +624,7 @@ class Account
 
 ```
 
-## abstraction
+## Abstraction
 
 Hiding internal implementation and highlight services provided.
 
