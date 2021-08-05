@@ -67,7 +67,7 @@ Without import statements,if we want to use any classes/methods of another class
 
 Example:  ` java.util.Scanner sc=new Scanner(); ` is valid without any import statements.
 But fully qualified names increase code redundancy and decrease readability,beacuse every time you use Scanner class,you should use the
-above the syntax,so this is not recommended.
+above syntax,so this is not recommended.
 
 Types of import:
 
