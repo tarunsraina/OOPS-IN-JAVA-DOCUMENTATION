@@ -946,7 +946,7 @@ Having more than one form.
 There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
 
 
-This is Runtime Polymorphism
+This is Runtime Polymorphism:
 
 ``` java
 class Bike
@@ -969,6 +969,30 @@ class Splendor extends Bike
     b1.run();  
   }  
 }  
+
+```
+
+This is compile time polymorphism:
+``` java
+
+class Calculation
+{
+  void sum(int a,int b)
+  {
+     System.out.println(a+b);
+  }
+  void sum(int a,int b,int c)
+  {
+     System.out.println(a+b+c);
+  }
+
+  public static void main(String args[])
+  {
+  	Calculation obj=new Calculation();
+  	obj.sum(10,10,10);
+ 	obj.sum(20,20);
+  }
+}
 
 ```
 
