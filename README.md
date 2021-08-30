@@ -811,6 +811,14 @@ class vehicleLoan extends Loan
 
 Next time if you want to implement Goldloan,you need not to write 300 methods,just extend Loan class and implement gold specific methods in your class.
 
+#### How inheritance is used to implement java.
+
+
+There are about 4300+ classes in java.The most commonly required methods are there in `Object` class and `Object` class is the root class.
+Similarly,all the commonly required methods of `IOException`,`SQLException`,`NumberFormatException` and so on will be there in `Exception` class. 
+Similarly,all the common methods in all `Exception` and `Error` classes are there in `Throwable` class.
+
+
 
 
 
