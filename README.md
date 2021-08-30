@@ -998,6 +998,16 @@ class Calculation
 
 
 
+## method overloading
+
+Same method name with diffrent argument type or order of arguments is called method overloading.
+
+abs(int n) , abs(long n) , abs(float n) are valid.
+
+All have same method name but diffrent argument type.
+
+
+
 
 
 
