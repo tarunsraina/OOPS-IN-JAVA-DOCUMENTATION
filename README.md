@@ -704,6 +704,21 @@ balance is the only data member in Account class and it is private,so Account cl
 
 
 
+## Inheritance
+
+
+Inheritance also known as  'IS-A RELATIONSHIP'.
+
+
+Biggest advantage is code reusability.
+
+
+Implemented by 'extends' keyword.
+
+
+
+
+
 
 
 
