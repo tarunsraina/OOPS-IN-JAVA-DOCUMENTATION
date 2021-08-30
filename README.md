@@ -748,6 +748,11 @@ parent class has only one method,but child has two methods because all methods i
 
 
 
+> If you create parent class object,you can call only those methods which are in parent class.[child class methods are not accesssible]
+
+
+
+
 
 
 
