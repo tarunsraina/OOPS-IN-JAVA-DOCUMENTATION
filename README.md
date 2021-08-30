@@ -50,6 +50,8 @@ core concepts with examples along with common misconceptions,points to remember 
     - Multilevel Inheritance
     - Hiearchial Inheritance
     - Hybrid Inheritance
+
+- Polymorphism
  
  
 
@@ -935,6 +937,40 @@ class C extends A,B
 ```
 
 Above problem is known as diamond access problem or ambiguity problem.
+
+
+## polymorphism
+
+Having more than one form.
+
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
+
+
+This is Runtime Polymorphism
+
+``` java
+class Bike
+{  
+  void run()
+  {
+  	System.out.println("Running");
+  }  
+}  
+class Splendor extends Bike
+{  
+  void run()
+  {
+  	System.out.println("Running safely with 60km");
+  }  
+  
+  public static void main(String args[])
+  {  
+    Bike b1 = new Splendor(); 
+    b1.run();  
+  }  
+}  
+
+```
 
 
 
