@@ -52,6 +52,10 @@ core concepts with examples along with common misconceptions,points to remember 
     - Hybrid Inheritance
 
 - Polymorphism
+  - Runtime polymorphism
+  - Compile time polymorphism
+  - Method overloading
+  - Method overriding
  
  
 
