@@ -39,6 +39,7 @@ core concepts with examples along with common misconceptions,points to remember 
  
  
  - Encapsulation
+   - Tightly Encapsulated class
  
  
 
@@ -679,6 +680,27 @@ class Account
 ```
 
 
+### Tightly Encapsulated class
+
+
+Every data member is declared as private,then it is said to be tightly encapsulated class.
+
+``` java
+
+class Account 
+{
+	private double balance;
+	
+	public double getBalance()
+	{
+	       // validate the user
+	       return balance;
+	}
+}
+
+```
+
+balance is the only data member in Account class and it is private,so Account class is tightly encapsulated class.
 
 
 
