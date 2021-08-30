@@ -934,6 +934,8 @@ class C extends A,B
 
 ```
 
+Above problem is known as diamond access problem or ambiguity problem.
+
 
 
 
