@@ -757,6 +757,62 @@ parent class has only one method,but child has two methods because all methods i
 
 
 
+### Without inheritance
+
+``` java
+
+class HomeLoan
+{
+	// 300 methods
+}
+
+class EducationLoan
+{
+	// 300 methods
+}
+
+
+class VehicleLoan
+{
+	// 300 methods
+}
+
+
+```
+
+Even though there are 900 methods in total,all these classes have some common methods among them because all deal with loans only.
+
+
+### With Inheritance
+
+``` java 
+
+class Loan
+{
+	// 250 common methods
+}
+
+class HomeLoan extends Loan
+{
+	// extra 50 methods
+}
+
+class EducationLoan extends Loan
+{
+	// extra 50 methods
+}
+
+class vehicleLoan extends Loan
+{
+	//extra 50 methods
+}
+
+```
+
+Next time if you want to implement Goldloan,you need not to write 300 methods,just extend Loan class and implement gold specific methods in your class.
+
+
+
 
 
 
