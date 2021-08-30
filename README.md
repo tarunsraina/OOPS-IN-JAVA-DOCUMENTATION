@@ -998,13 +998,45 @@ class Calculation
 
 
 
-## method overloading
+## Method overloading
 
 Same method name with diffrent argument type or order of arguments is called method overloading.
 
 abs(int n) , abs(long n) , abs(float n) are valid.
 
 All have same method name but diffrent argument type.
+
+Method overloading is also known as compile time polymorphism,static polymorphism or early binding.
+
+
+## Method overriding
+
+``` java
+
+class parent
+{
+        public void vehicles()
+	{
+		System.out.println("All vehicles to child");
+	}
+	public void LandProperty()
+	{
+		System.out.println("50% to child,50% donate");
+	}
+}
+
+class chils extends parent
+{
+	// Happy with vehicles implementation,does not interfere
+	
+	// Child not happy with property distribution,overrides
+	public void LandProperty
+	{
+		System.out.println("80% to me,20% for donation");
+	}
+}
+
+```
 
 
 
