@@ -794,17 +794,17 @@ class Loan
 
 class HomeLoan extends Loan
 {
-	// extra 50 methods
+	// extra 50 methods specific to home loan
 }
 
 class EducationLoan extends Loan
 {
-	// extra 50 methods
+	// extra 50 methods specific to education loan
 }
 
 class vehicleLoan extends Loan
 {
-	//extra 50 methods
+	//extra 50 methods specific to vehicle loan
 }
 
 ```
