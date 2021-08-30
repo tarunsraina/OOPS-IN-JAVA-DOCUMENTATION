@@ -44,6 +44,12 @@ core concepts with examples along with common misconceptions,points to remember 
 
 
 - Inheritance
+  - Types of inheritance
+    - Single Inheritance
+    - Multiple Inheritance
+    - Multilevel Inheritance
+    - Hiearchial Inheritance
+    - Hybrid Inheritance
  
  
 
@@ -817,6 +823,116 @@ Next time if you want to implement Goldloan,you need not to write 300 methods,ju
 There are about 4300+ classes in java.The most commonly required methods are there in `Object` class and `Object` class is the root class.
 Similarly,all the commonly required methods of `IOException`,`SQLException`,`NumberFormatException` and so on will be there in `Exception` class. 
 Similarly,all the common methods in all `Exception` and `Error` classes are there in `Throwable` class.
+
+### Single Inheritance
+
+``` java
+
+class parent
+{
+      
+}
+
+class child extends parent
+{
+
+}
+
+```
+
+### Multiple Inheritance
+
+Single child class extending more than one parent class.
+
+Java wont provide support for multiple inheritance.
+
+
+### Multilevel inheritance
+
+``` java
+
+class A
+{
+
+}
+class B extends A
+{
+
+}
+class C extends B
+{
+	
+}
+
+```
+
+
+
+### Hiearchial Inheritance
+
+``` java
+
+class A
+{
+
+}
+
+class B extends A
+{
+
+}
+class C extends A
+{
+
+}
+class D extends A
+{
+
+}
+
+```
+
+Reverse of multiple inheritance.
+
+### Hybrid Inheritance
+
+Not supported in java.
+
+
+## why multiple inheritance is not supported in java.
+
+To prevent ambiguity.
+
+
+consider this code,
+
+
+''' java
+
+class A
+{
+     public void m1()
+     {
+          System.out.print("Hello from A");
+     }
+}
+
+class B
+{
+	public void m1()
+	{
+		System.out.println("Hi from B");
+	}
+}
+
+class C extends A,B
+{
+        C c=new C();
+	c.m1();  // here should this execute m1 of A class OR m1 of B class?
+	//To prevent this ambiguity,multiple inheritance is not allowed in java.
+}
+
+```
 
 
 
