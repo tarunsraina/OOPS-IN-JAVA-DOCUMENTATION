@@ -40,6 +40,10 @@ core concepts with examples along with common misconceptions,points to remember 
  
  - Encapsulation
    - Tightly Encapsulated class
+
+
+
+- Inheritance
  
  
 
@@ -714,6 +718,32 @@ Biggest advantage is code reusability.
 
 
 Implemented by 'extends' keyword.
+
+
+``` java
+
+class parent
+{
+	public void m1()
+	{
+		System.out.println("Parent");
+	}
+}
+
+class child extends parent
+{
+	public void m2()
+	{
+		System.out.println("Child");
+	}
+}
+
+
+```
+
+
+
+parent class has only one method,but child has two methods because all methods in parent class are inherited by child class.
 
 
 
