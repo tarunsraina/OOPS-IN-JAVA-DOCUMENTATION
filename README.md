@@ -1029,7 +1029,7 @@ class parent
 	}
 }
 
-class chils extends parent
+class child extends parent
 {
 	// Happy with vehicles implementation,does not interfere
 	
