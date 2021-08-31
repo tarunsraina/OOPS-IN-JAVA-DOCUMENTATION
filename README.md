@@ -1034,7 +1034,7 @@ class chils extends parent
 	// Happy with vehicles implementation,does not interfere
 	
 	// Child not happy with property distribution,overrides
-	public void LandProperty
+	public void LandProperty()
 	{
 		System.out.println("80% to me,20% for donation");
 	}
